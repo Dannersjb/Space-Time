@@ -1,0 +1,153 @@
+//colours
+$primary: #9fb5f4;
+$secondary : #7fb6f9;
+
+//fonts
+$heading: "3d_pixels";
+$text: "pixels";
+
+@font-face {
+  font-family: "3d_pixels";
+  src: url('../fonts/3D-Thirteen-Pixel-Fonts.eot');
+  src: url('../fonts/3D-Thirteen-Pixel-Fonts.ttf') format('truetype');
+
+}
+@font-face {
+  font-family: "pixels";
+  src: url('../fonts/pixelFJ8pt1__.TTF') format('truetype');
+}
+
+
+#game_window {
+  //background-image: url('../images/background.png');
+  border: 3px solid $primary;
+}
+
+h1 {
+  color: $primary;
+  margin: 55px 0 50px 0;
+  font-size: 96px;
+  line-height: 0px;
+  font-family: $heading;
+}
+body {
+  text-align: center;
+  color: $secondary;
+  background-image: url('../images/body_back.jpg');
+  font-family: $text;
+
+}
+
+p {
+  color: $secondary;
+  font-size: 14px;
+  font-family: $text;
+  line-height: 0px;
+  margin: 65px 0 40px 0;
+}
+
+span {
+  color: $secondary;
+  font-size: 12px;
+  font-family: $text;
+  line-height: 0px;
+  margin: 40px 0 40px 0;
+  display: block;
+}
+
+#page{
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#score {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  font-size: 20px;
+}
+#health_text {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  font-size: 20px;
+}
+
+#health_value {
+  position: absolute;
+  left: 200px;
+  top: -10px;
+  color: black;
+  font-size: 20px;
+}
+
+#missile_charge {
+  position: absolute;
+  left: 390px;
+  top: -10px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.scores {
+  width: 400px;
+  margin: 0px auto;
+  td {
+    text-align: left;
+    padding: 5px;
+    &.position {
+      width: 50px;
+    }
+    &.hs_name {
+      width: 270px;
+    }
+    &.hs_scores {
+      width: 70px;
+      text-align: right;
+    }
+  }
+}
+
+#game_over {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  background-color: rgba(200, 0, 0, 0.7);
+  border: solid blue 3px;
+  padding: 20px;
+  label {
+    font-size: 16px;
+  }
+  span {
+    font-size: 16px;
+  }
+  input {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: $primary;
+    font-size: 16px;
+    font-family: $text;
+    text-align: center;
+    &#name {
+      width: 180px;
+    }
+    &.submit_score {
+      background-color: red;
+      margin-top: 30px;
+      padding: 7px 10px;
+      border: 1px solid blue;
+      &:hover {
+        background-color: blue;
+        color:red;
+        border-color: red;
+      }
+    }
+  }
+}

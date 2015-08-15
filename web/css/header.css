@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "3d_pixels";
+  src: url("../fonts/3D-Thirteen-Pixel-Fonts.eot");
+  src: url("../fonts/3D-Thirteen-Pixel-Fonts.ttf") format("truetype"); }
+@font-face {
+  font-family: "pixels";
+  src: url("../fonts/pixelFJ8pt1__.TTF") format("truetype"); }
+#game_window {
+  border: 3px solid #9fb5f4; }
+
+h1 {
+  color: #9fb5f4;
+  margin: 55px 0 50px 0;
+  font-size: 96px;
+  line-height: 0px;
+  font-family: "3d_pixels"; }
+
+body {
+  text-align: center;
+  color: #7fb6f9;
+  background-image: url("../images/body_back.jpg");
+  font-family: "pixels"; }
+
+p {
+  color: #7fb6f9;
+  font-size: 14px;
+  font-family: "pixels";
+  line-height: 0px;
+  margin: 65px 0 40px 0; }
+
+span {
+  color: #7fb6f9;
+  font-size: 12px;
+  font-family: "pixels";
+  line-height: 0px;
+  margin: 40px 0 40px 0;
+  display: block; }
+
+#page {
+  width: 800px;
+  margin: 0 auto;
+  position: relative; }
+
+#score {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  font-size: 20px; }
+
+#health_text {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  font-size: 20px; }
+
+#health_value {
+  position: absolute;
+  left: 200px;
+  top: -10px;
+  color: black;
+  font-size: 20px; }
+
+#missile_charge {
+  position: absolute;
+  left: 390px;
+  top: -10px;
+  font-size: 20px; }
+
+.hidden {
+  display: none; }
+
+.scores {
+  width: 400px;
+  margin: 0px auto; }
+  .scores td {
+    text-align: left;
+    padding: 5px; }
+    .scores td.position {
+      width: 50px; }
+    .scores td.hs_name {
+      width: 270px; }
+    .scores td.hs_scores {
+      width: 70px;
+      text-align: right; }
+
+#game_over {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  background-color: rgba(200, 0, 0, 0.7);
+  border: solid blue 3px;
+  padding: 20px; }
+  #game_over label {
+    font-size: 16px; }
+  #game_over span {
+    font-size: 16px; }
+  #game_over input {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: #9fb5f4;
+    font-size: 16px;
+    font-family: "pixels";
+    text-align: center; }
+    #game_over input#name {
+      width: 180px; }
+    #game_over input.submit_score {
+      background-color: red;
+      margin-top: 30px;
+      padding: 7px 10px;
+      border: 1px solid blue; }
+      #game_over input.submit_score:hover {
+        background-color: blue;
+        color: red;
+        border-color: red; }
